@@ -21,7 +21,7 @@ function NewGameCreate({ display, setDisplay }: IProps): JSX.Element {
 
 
     const createBoard = (e: KeyboardEvent<HTMLInputElement>) => {
-        if(e.key === "Enter") {
+        if(e.key === "Enter" && name) {
             socket?.emit("create board", name, user?.id)
         }
     }

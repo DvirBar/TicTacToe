@@ -12,7 +12,8 @@ interface iProps {
 
 function GameStatus({ status, board }: iProps) {
     const {
-        user
+        user,
+        setBoardId
     } = useContext(SocketContext)
 
     const hasWon = board.winner === user?.mark
@@ -44,6 +45,9 @@ function GameStatus({ status, board }: iProps) {
                 (You were {user?.mark})
             </div>
             <GameBoard board={board} finished={true} />
+            <button 
+            className={styles.button} 
+            onClick={() => setBoardId("")}>Back</button>
         </div>
     )
 }
