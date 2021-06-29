@@ -1,0 +1,14 @@
+.button {
+    width: 100%;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+    border: 0;
+}
+
+.button:hover {
+    opacity: 0.7;
+}

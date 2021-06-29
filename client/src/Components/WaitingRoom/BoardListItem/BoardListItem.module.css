@@ -1,0 +1,14 @@
+.boardListItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #999;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.boardListItem:hover {
+    background-color: rgba(85, 85, 85, 0.386);
+}

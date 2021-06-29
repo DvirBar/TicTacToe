@@ -1,0 +1,36 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "A simple Tic Tac Toe real-time api",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon server/src/server.ts",
+    "install-client": "cd client && npm install && npm run build",
+    "install-server": "npm install && cd server && tsc",
+    "start-server": "node server/dist/src/server.js",
+    "start": "npm run install-client && npm run install-server && npm run start-server"
+  },
+  "author": "Dvir Bartov",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.12",
+    "@types/uuid": "^8.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2",
+    "typescript": "^4.3.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.9.0"
+  }
+}
